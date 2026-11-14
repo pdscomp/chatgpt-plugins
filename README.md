@@ -34,9 +34,10 @@ Requires Node.js 18+; no package installation is needed:
 
 ```sh
 node scripts/validate.mjs
+node --test tests/local-transport.test.mjs
 ```
 
-GitHub Actions runs the same package checks. Live Autodesk OAuth, hosted tools, and the local Fusion session are not exercised by these checks. Never commit tokens, passwords, `.env` files, user designs, or session data.
+GitHub Actions runs the same package checks and simulated local-connector interruption tests. Live Autodesk OAuth, hosted tools, and the local Fusion session are not exercised by CI. Never commit tokens, passwords, `.env` files, user designs, or session data.
 
 ## Ownership and branding
 

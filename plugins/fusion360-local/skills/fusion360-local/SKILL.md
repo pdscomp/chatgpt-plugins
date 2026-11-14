@@ -7,4 +7,6 @@ Use the fusion360-local MCP tools to inspect projects, documents, API documentat
 
 The bridge connects only to http://127.0.0.1:27182/mcp on this computer. Fusion and its MCP add-in must be running. If disconnected, report the connection error; do not expose the server publicly or retry a modifying operation whose outcome is uncertain.
 
+The bridge reconnects automatically on subsequent requests after an interruption. If a tool call reports that it was not replayed, inspect the model with a read-only request before deciding whether to repeat the operation. A response lost after execution does not mean the model operation failed. If the host has stopped the bridge process, the user must restart or reload the installed plugin.
+
 Read the relevant Fusion API documentation before writing scripts. Verify requested model changes afterward using read operations or a screenshot. Do not catch exceptions inside a script's run function. Save documents only when expressly requested. Ask whether to save or discard before closing a document with unsaved changes.
