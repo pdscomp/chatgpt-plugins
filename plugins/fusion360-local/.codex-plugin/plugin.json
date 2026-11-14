@@ -11,15 +11,18 @@
     "displayName": "Fusion360 Local",
     "logo": "./assets/fusion360-icon.png",
     "longDescription": "Access the Local Fusion360 MCP server running on http://127.0.0.1:27182/mcp via a Local Connector.",
-    "shortDescription": "Connect to local Fusion"
+    "shortDescription": "Connect to local Fusion",
+    "websiteURL": "https://github.com/pdscomp/chatgpt-plugins"
   },
   "name": "fusion360-local",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Access the Local Fusion360 MCP server running on http://127.0.0.1:27182/mcp via a Local Connector.",
   "author": {
     "name": "Paul Swenson"
   },
   "keywords": [],
   "skills": "./skills",
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "homepage": "https://github.com/pdscomp/chatgpt-plugins",
+  "repository": "https://github.com/pdscomp/chatgpt-plugins"
 }

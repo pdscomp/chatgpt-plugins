@@ -1,23 +1,26 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fusion360-data",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Access the Fusion360 Data MCP Server via OAuth login.",
   "author": {
-    "name": "App developer"
+    "name": "Paul Swenson"
   },
   "extensions": {
     "com.openai": {
       "interface": {
         "capabilities": [],
         "category": "Other",
-        "developerName": "App developer",
+        "developerName": "Paul Swenson",
         "displayName": "Fusion360 Data",
         "longDescription": "Access the Fusion360 Data MCP Server via OAuth login.",
         "shortDescription": "Access Fusion360 Data",
         "logo": "./assets/autodesk-icon.png",
-        "composerIcon": "./assets/autodesk-icon.png"
+        "composerIcon": "./assets/autodesk-icon.png",
+        "websiteURL": "https://github.com/pdscomp/chatgpt-plugins"
       }
     }
-  }
+  },
+  "homepage": "https://github.com/pdscomp/chatgpt-plugins",
+  "repository": "https://github.com/pdscomp/chatgpt-plugins"
 }

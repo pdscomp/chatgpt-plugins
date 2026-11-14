@@ -16,7 +16,7 @@ This service's tools are discovered after connecting. The four tools exposed by 
 
 ## Source notes
 
-The source is the active installed **Fusion360 Data** app-backed plugin version 1.0.0, retrieved on November 14, 2026. Its description, display name, category, publisher text, and declared capabilities were taken from that export. The active export contains a private app binding and a compatibility manifest; it does not contain a portable MCP configuration or icon file.
+The source is the active installed **Fusion360 Data** app-backed plugin version 1.0.0, retrieved on November 14, 2026. Its description, display name, category, and declared capabilities were taken from that export. The author and developer name were subsequently updated to Paul Swenson to match Fusion360 Local. Both plugins link to this GitHub repository. The active export contains a private app binding and a compatibility manifest; it does not contain a portable MCP configuration or icon file.
 
 For this public, portable copy:
 
