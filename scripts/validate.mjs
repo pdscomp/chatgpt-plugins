@@ -46,6 +46,22 @@ for (const entry of catalog.plugins) {
       const auth = server.extensions['com.openai'].auth;
       assert.equal(auth.type, 'oauth');
       assert.equal(auth.client.mode, 'cimd');
+      // Guard against the observed Autodesk invalid_scope failure. General
+      // Autodesk OIDC scopes must not leak into this MCP connection.
+      const supportedScopes = new Set(['mcp:read', 'mcp:write', 'offline_access']);
+      const requestedScopes = [...auth.baseScopes, ...auth.defaultScopes];
+      assert.ok(requestedScopes.length > 0);
+      assert.ok(requestedScopes.every(scope => supportedScopes.has(scope)));
+      assert.ok(auth.defaultScopes.includes('offline_access'));
+      assert.equal(auth.oidcEnabled, false);
+      assert.deepEqual(auth.oidcScopesSupported, []);
+      assert.equal(auth.resource, server.url);
+      assert.equal(auth.authorizationServerBase, 'https://developer.api.autodesk.com/mcpauth');
+      assert.equal(auth.authorizationUrl, auth.authorizationServerBase + '/v1/authorize');
+      assert.equal(auth.tokenUrl, auth.authorizationServerBase + '/v1/token');
+      assert.ok(!Object.hasOwn(auth.client, 'clientId'));
+      assert.ok(!Object.hasOwn(auth, 'oidcConfigurationUrl'));
+      assert.ok(!Object.hasOwn(auth, 'oidcUserinfoEndpoint'));
     }
   }
   console.log(`${entry.name} ${manifest.version}: package checks passed`);

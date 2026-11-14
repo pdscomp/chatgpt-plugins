@@ -1,6 +1,6 @@
 {
   "name": "fusion360-data",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Access the Fusion360 Data MCP Server via OAuth login.",
   "author": {
     "name": "Paul Swenson"

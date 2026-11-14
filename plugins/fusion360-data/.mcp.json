@@ -10,17 +10,18 @@
             "client": {
               "mode": "cimd"
             },
-            "baseScopes": [
-              "mcp:read",
-              "mcp:write",
-              "offline_access"
-            ],
+            "baseScopes": [],
             "defaultScopes": [
               "mcp:read",
               "mcp:write",
               "offline_access"
             ],
-            "oidcEnabled": false
+            "oidcEnabled": false,
+            "authorizationUrl": "https://developer.api.autodesk.com/mcpauth/v1/authorize",
+            "tokenUrl": "https://developer.api.autodesk.com/mcpauth/v1/token",
+            "authorizationServerBase": "https://developer.api.autodesk.com/mcpauth",
+            "resource": "https://developer.api.autodesk.com/fusion/mcp",
+            "oidcScopesSupported": []
           }
         }
       }
