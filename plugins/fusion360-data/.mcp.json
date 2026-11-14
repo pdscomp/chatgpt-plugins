@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "fusion360-data": {
+      "type": "streamable-http",
+      "url": "https://developer.api.autodesk.com/fusion/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            },
+            "baseScopes": [
+              "mcp:read",
+              "mcp:write",
+              "offline_access"
+            ],
+            "defaultScopes": [
+              "mcp:read",
+              "mcp:write",
+              "offline_access"
+            ],
+            "oidcEnabled": false
+          }
+        }
+      }
+    }
+  }
+}

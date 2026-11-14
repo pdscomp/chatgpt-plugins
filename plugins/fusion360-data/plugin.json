@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fusion360-data",
+  "version": "1.0.0",
+  "description": "Access the Fusion360 Data MCP Server via OAuth login.",
+  "author": {
+    "name": "App developer"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Other",
+        "developerName": "App developer",
+        "displayName": "Fusion360 Data",
+        "longDescription": "Access the Fusion360 Data MCP Server via OAuth login.",
+        "shortDescription": "Access Fusion360 Data",
+        "logo": "./assets/fusion360.png",
+        "composerIcon": "./assets/fusion360.png"
+      }
+    }
+  }
+}

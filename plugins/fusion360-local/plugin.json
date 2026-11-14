@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Paul Swenson"
+  },
+  "description": "Access the Local Fusion360 MCP server running on http://127.0.0.1:27182/mcp via a Local Connector.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "category": "Productivity",
+        "composerIcon": "./assets/fusion-transparent.png",
+        "defaultPrompt": "Check the active Fusion document.",
+        "developerName": "Paul Swenson",
+        "displayName": "Fusion360 Local",
+        "logo": "./assets/fusion-transparent.png",
+        "longDescription": "Access the Local Fusion360 MCP server running on http://127.0.0.1:27182/mcp via a Local Connector.",
+        "shortDescription": "Connect to local Fusion"
+      }
+    }
+  },
+  "name": "fusion360-local",
+  "version": "0.1.1"
+}

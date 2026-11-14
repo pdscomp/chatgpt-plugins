@@ -1,0 +1,32 @@
+{
+  "name": "pdscomp-chatgpt-plugins",
+  "interface": {
+    "displayName": "ChatGPT Plug-ins"
+  },
+  "plugins": [
+    {
+      "name": "fusion360-data",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fusion360-data"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Other"
+    },
+    {
+      "name": "fusion360-local",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fusion360-local"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
