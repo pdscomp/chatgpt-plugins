@@ -5,16 +5,16 @@
       "Write"
     ],
     "category": "Productivity",
-    "composerIcon": "./assets/fusion-transparent.png",
+    "composerIcon": "./assets/fusion360-icon.png",
     "defaultPrompt": "Check the active Fusion document.",
     "developerName": "Paul Swenson",
     "displayName": "Fusion360 Local",
-    "logo": "./assets/fusion-transparent.png",
+    "logo": "./assets/fusion360-icon.png",
     "longDescription": "Access the Local Fusion360 MCP server running on http://127.0.0.1:27182/mcp via a Local Connector.",
     "shortDescription": "Connect to local Fusion"
   },
   "name": "fusion360-local",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Access the Local Fusion360 MCP server running on http://127.0.0.1:27182/mcp via a Local Connector.",
   "author": {
     "name": "Paul Swenson"

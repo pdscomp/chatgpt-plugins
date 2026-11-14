@@ -23,7 +23,7 @@ For this public, portable copy:
 - The account-specific app binding is replaced with `mcp.json` for the Autodesk endpoint requested by the owner. OAuth settings come from the endpoint's protected-resource and authorization-server metadata.
 - The generated private package name is normalized to `fusion360-data`.
 - The listing subtitle is shortened to meet the portable package's 30-character limit. The full active description is retained.
-- The owner's supplied 64 × 64 transparent PNG is included as the icon.
+- The owner's supplied 64 × 64 Autodesk PNG is included as the icon.
 - A root Agent Plugins manifest and matching compatibility files are included.
 
 This exports the integration definition, not Autodesk's server implementation, account authorization, or user data. The private installed plugin has not been modified by this repository upload.

@@ -24,9 +24,9 @@ Each folder under `plugins/` is self-contained. For a package upload, ZIP the co
 ## Source and maintenance
 
 - Fusion360 Data is a portable export based on the active installed app-backed plugin, not the earlier deleted standalone plugin. Read its [source notes](plugins/fusion360-data/README.md#source-notes) for the export differences.
-- Fusion360 Local is based on the saved version 0.1.1. Its bridge and connection settings are preserved. Public exports omit the account email from author metadata.
+- Fusion360 Local is based on the saved version 0.1.1, with subsequent icon updates in this repository. Its bridge and connection settings are preserved. Public exports omit the account email from author metadata.
 - Update each plugin's version independently. Keep its portable and compatibility manifests synchronized. Installing a repository copy does not automatically update an existing account-created plugin, or vice versa.
-- The Data icon is the supplied 64 × 64 PNG. Local retains its saved icon. Icon display depends on the host; an included image does not guarantee every listing surface displays it.
+- Fusion360 Data uses the supplied Autodesk icon; Fusion360 Local uses the supplied Fusion icon. Both PNGs are 64 × 64. Icon display depends on the host; an included image does not guarantee every listing surface displays it.
 
 ## Validate changes
 

@@ -1,6 +1,6 @@
 {
   "name": "fusion360-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Access the Fusion360 Data MCP Server via OAuth login.",
   "author": {
     "name": "App developer"
@@ -12,8 +12,8 @@
     "displayName": "Fusion360 Data",
     "longDescription": "Access the Fusion360 Data MCP Server via OAuth login.",
     "shortDescription": "Access Fusion360 Data",
-    "logo": "./assets/fusion360.png",
-    "composerIcon": "./assets/fusion360.png"
+    "logo": "./assets/autodesk-icon.png",
+    "composerIcon": "./assets/autodesk-icon.png"
   },
   "mcpServers": "./.mcp.json"
 }
